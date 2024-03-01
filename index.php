@@ -1,0 +1,11 @@
+<?php
+$login_cookie = $_COOKIE['login'];
+if(isset($login_cookie)){
+    echo"Be-Vindo, $login_cookie <br>";
+    echo"Essas informaçoes <font color='red'> PODEM </font> ser acessadas por voce";
+}else{
+    echo"Bem-Vindo, convidado <br>";
+    echo"Essas informaçoes <font color='red'> NAO PODEM </font> ser acessadas por voce";
+    echo"<br><a href='login.html'>Faça login</a> Para ler o conteudo";
+}
+?>
